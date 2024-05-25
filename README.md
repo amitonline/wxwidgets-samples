@@ -2,7 +2,7 @@
 Sample code for wxWidgets 3.2.x and later
 
 Companion source code to https://truelogic.org/wordpress/category/programming/cc/wxwidgets/
-Covers everything from console basics, basic windowing, widgets, layouts, stream classes, drag and drop, threading, regular expressions and inter-process communications
+Covers everything from console basics, basic windowing, widgets, layouts, stream classes, drag and drop, threading, regular expressions and inter-process communications. The project files are for CodeBlocks IDE, but the source code can be used in any IDE. Wny I chose CodeBlocks was because of all the IDEs , it has the most seamless integration for wxWidgets.
 
 Some sample screenshots:
 
