@@ -18,4 +18,5 @@ Some sample screenshots:
 ![Screenshot-from-2023-09-25-21-07-17](https://github.com/amitonline/wxwidgets-samples/assets/6240907/56cb59d0-ab0f-4bae-b37f-6c6a827fd076)
 
 
-
+**UPDATED: 15 JUNE 2024**
+All samples are now compatible to run under Visual Studio 2022/Windows 10.
