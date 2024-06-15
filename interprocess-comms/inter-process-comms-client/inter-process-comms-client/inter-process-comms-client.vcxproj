@@ -21,8 +21,8 @@
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>
     <Keyword>Win32Proj</Keyword>
-    <ProjectGuid>{e24e58c4-1226-4492-a59b-34514368f723}</ProjectGuid>
-    <RootNamespace>wxfontdialog</RootNamespace>
+    <ProjectGuid>{271c2d58-8bfb-4c08-bd25-6927ad344c00}</ProjectGuid>
+    <RootNamespace>interprocesscommsclient</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
@@ -106,7 +106,7 @@
       <ConformanceMode>true</ConformanceMode>
     </ClCompile>
     <Link>
-      <SubSystem>Windows</SubSystem>
+      <SubSystem>Console</SubSystem>
       <GenerateDebugInformation>true</GenerateDebugInformation>
     </Link>
   </ItemDefinitionGroup>
@@ -127,12 +127,14 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClInclude Include="..\fontdialog.h" />
-    <ClInclude Include="..\main.h" />
+    <ClInclude Include="..\ip-client-conn.h" />
+    <ClInclude Include="..\ip-client.h" />
+    <ClInclude Include="..\main-client.h" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="..\fontdialog.cpp" />
-    <ClCompile Include="..\main.cpp" />
+    <ClCompile Include="..\ip-client-conn.cpp" />
+    <ClCompile Include="..\ip-client.cpp" />
+    <ClCompile Include="..\main-client.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

@@ -1,7 +1,11 @@
 #include "main.h"
 #include "fontdialog.h"
 
-IMPLEMENT_APP(MainApp)
+#ifndef _WIN32
+IMPLEMENT_APP(MainApp);
+#else
+wxIMPLEMENT_APP(MainApp);
+#endif 
 
 bool MainApp::OnInit() {
     FontDialog* dlg = new FontDialog(wxT("Font Dialog Demo"));

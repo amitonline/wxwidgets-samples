@@ -2,7 +2,11 @@
 #include "window1.h"
 #include "window2.h"
 
-IMPLEMENT_APP(Main)
+#ifndef _WIN32
+IMPLEMENT_APP(MainApp);
+#else
+wxIMPLEMENT_APP(Main);
+#endif 
 
 bool Main::OnInit() {
     Window1* win1 = new Window1(wxT("First window"));

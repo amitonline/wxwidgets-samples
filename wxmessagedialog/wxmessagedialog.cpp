@@ -35,15 +35,19 @@ void XDialog::onClick(wxCommandEvent& evt) {
     switch (id) {
         case ID_BTN1:
             title = wxT("Info"); msg = "This is information";
+            flags |= wxICON_INFORMATION;
             break;
         case ID_BTN2:
             title = wxT("Error"); msg = "This is error";
+            flags |= wxICON_ERROR;
             break;
         case ID_BTN3:
             title = wxT("Question"); msg = "This is question";
+            flags |= wxICON_QUESTION;
             break;
         case ID_BTN4:
             title = wxT("Exclamation"); msg = "This is exclamation";
+            flags |= wxICON_EXCLAMATION;
             break;
     }
 

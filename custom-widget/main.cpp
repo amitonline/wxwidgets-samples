@@ -1,7 +1,11 @@
 #include "main.h"
 #include "custom-widget.h"
 
-IMPLEMENT_APP(MainApp)
+#ifndef _WIN32
+IMPLEMENT_APP(MainApp);
+#else
+wxIMPLEMENT_APP(MainApp);
+#endif 
 
 MainFrame::MainFrame(const wxString& title):
     wxFrame(NULL, -1, title, wxDefaultPosition, wxSize(800,300)) {

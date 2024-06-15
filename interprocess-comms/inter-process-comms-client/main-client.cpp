@@ -4,7 +4,11 @@
 #include <wx/utils.h>
 #include <wx/ipc.h>
 
-IMPLEMENT_APP(MainClient)
+#ifndef _WIN32
+IMPLEMENT_APP(MainClient);
+#else
+wxIMPLEMENT_APP_CONSOLE(MainClient);
+#endif 
 
 bool MainClient::OnInit(){
     wxString server = wxT("8001");

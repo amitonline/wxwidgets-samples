@@ -1,7 +1,12 @@
 #include "main.h"
 #include "wxnotebook.h"
 
-IMPLEMENT_APP(MainApp)
+
+#ifndef _WIN32
+IMPLEMENT_APP(MainApp);
+#else
+wxIMPLEMENT_APP(MainApp);
+#endif 
 
 bool MainApp::OnInit(){
     Notebook *book = new Notebook(wxT("Notbook demo"));

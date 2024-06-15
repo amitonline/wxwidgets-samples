@@ -3,8 +3,12 @@
 #include <wx/persist.h>
 #include <wx/persist/toplevel.h>
 
+#ifndef _WIN32
+IMPLEMENT_APP(MainApp);
+#else
+wxIMPLEMENT_APP(MainApp);
+#endif 
 
-IMPLEMENT_APP(MainApp)
 
 bool MainApp::OnInit() {
 

@@ -20,10 +20,12 @@ TestEvents::TestEvents(const wxString& title):
 
 void TestEvents::leftBtnClick(wxCommandEvent& evt) {
     panLeft->SetBackgroundColour(wxColour(80,200,100));
+    panLeft->Refresh();
 }
 
 void TestEvents::rightBtnClick(wxCommandEvent& evt) {
-    panRight->SetBackgroundColour(wxColour(115,230,90));
+    panRight->SetBackgroundColour(wxColour(15,20,70));
+    panRight->Refresh();
 }
 
 

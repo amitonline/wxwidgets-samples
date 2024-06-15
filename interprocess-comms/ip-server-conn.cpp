@@ -21,6 +21,7 @@ bool ServerConn::OnExec(const wxString& topic, const wxString& data) {
 
 void const* ServerConn::OnRequest(const wxString& topic, const wxString& item, size_t size, wxIPCFormat format) {
      wxPuts("OnRequest()");
+     return NULL;
 }
 
 bool ServerConn::OnAdvise(const wxString& topic, const wxString& item, const void *data, size_t size, wxIPCFormat format) {
@@ -32,10 +33,12 @@ bool ServerConn::OnAdvise(const wxString& topic, const wxString& item, const voi
 bool ServerConn::DoAdvise(const wxString& topic, const void *data, size_t size, wxIPCFormat format){
     wxPuts("DoAdvise()");
     return wxConnection::DoAdvise(topic, data, size, format);
+
 }
 
 bool ServerConn::OnStopAdvise(const wxString& topic, const wxString& item) {
  wxPuts("OnStopAdvise()");
+ return TRUE;
 }
 
 bool ServerConn::OnStartAdvise(const wxString& topic, const wxString& item) {

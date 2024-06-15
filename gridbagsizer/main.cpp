@@ -1,7 +1,11 @@
 #include "main.h"
 #include "gridbagsizer.h"
 
-IMPLEMENT_APP(MainApp)
+#ifndef _WIN32
+IMPLEMENT_APP(MainApp);
+#else
+wxIMPLEMENT_APP(MainApp);
+#endif 
 
 bool MainApp::OnInit() {
     GridBagSizer *grid = new GridBagSizer(wxT("GridBag sizer Demo"));
